@@ -33,7 +33,7 @@ export class MailService {
         return await this.transporter
             .sendMail({ 
                 from: `info@imperialmortgagebank.com`,
-                to: [`akintolafelix2121@gmail.com`, `flexyakin1997@gmail.com`],
+                to: `property@imperialmortgagebank.com`,
                 subject: options.subject,
                 html: template(data)
             })
@@ -48,7 +48,7 @@ export class MailService {
         return await this.transporter
             .sendMail({ 
                 from: `info@imperialmortgagebank.com`,
-                to: [`akintolafelix2121@gmail.com`, `flexyakin1997@gmail.com`],
+                to: `property@imperialmortgagebank.com`,
                 subject: options.subject,
                 html: template(data)
             })

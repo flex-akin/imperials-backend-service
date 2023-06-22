@@ -19,7 +19,6 @@ app.use(cors())
 
 app.post('/sendEnquiryMail', async (req : Request<{}, {}, EnquiryData, {}>, res : Response<MessageInterface>, next : NextFunction) => {
     try {
-        console.log(req.body)
 
         var option : Options = {
             subject : "Property Enquiry"
@@ -78,7 +77,6 @@ app.post('/sendApplicationMail', async (req : Request<{}, {}, MortgageApplicatio
             message : "Mail is Sent"
         })
     } catch (error) {
-        console.log(error)
         next( new createHttpError.InternalServerError("Message could not be sent") )
     }
 })
